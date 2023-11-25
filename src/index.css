@@ -1,0 +1,292 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: large;
+  text-align: left;
+  background-color: lavender;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  align-items: baseline;
+  padding: 7%;
+}
+
+form {
+  border-radius: 7px;
+  background-color: #fff;
+}
+
+a {
+  color: rgb(112, 112, 230);
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type='submit'] {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+.rect {
+  font-size: 13px;
+  width: 100%;
+  padding: 17px;
+  margin: 10px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 7px;
+}
+
+fieldset {
+  border: none;
+}
+
+.my_button {
+  width: 100%;
+  padding: 17px;
+  margin: 31px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: rgb(201, 201, 255);
+  opacity: 0.89;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.welcome {
+  align-self: flex-start;
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+  padding: 20px;
+  width: 500px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.notes_exist,
+.email-date {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  align-self: stretch;
+  margin-top: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.about,
+.notes {
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.go-to-notes {
+  width: 100px;
+  height: 50px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 10px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  color: inherit;
+  background-color: #007bff;
+  color: #fff;
+}
+.create:hover,
+.create-note:hover,
+.go-to-notes:hover,
+.sign-out:hover {
+  background-color: #0056b3;
+}
+
+.about:active,.notes:active {
+  text-decoration: none;
+  color: #2f0088;
+  margin: 10px;
+  transition: color 0.3s;
+}
+
+.about:hover,
+.notes:hover {
+  color: #ff5733;
+}
+
+.notes,.about {
+  text-decoration: none;
+  color: #007bff;
+  margin: 10px;
+  transition: color 0.3s;
+}
+
+.notes-list {
+  list-style: none;
+  padding: 0;
+}
+
+.notes-list li {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 2px;
+}
+
+.note-icons span {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.note-icons span:hover {
+  transform: scale(1.2);
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+.create{
+  text-align: center;
+  width: 465px;
+  height: 50px;
+  padding: 10px 11px;
+  border-radius: 5px;
+  margin-left: -1px;
+  margin-right: 2px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  color: inherit;
+  background-color: #007bff;
+  color: #fff;
+}
+.create-note{
+  width: 100px;
+  height: 50px;
+  padding: 10px 11px;
+  border-radius: 5px;
+  margin-left: 2px;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  color: inherit;
+  background-color: #007bff;
+  color: #fff;
+}
+.note-actions {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edit-note,
+.delete-note {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  color: #fff;
+}
+.edit-note{
+  padding: 5px 16px;
+  margin-right: 10px;
+}
+.delete-note{
+  padding: 9px 16px;
+  margin-right: 10px;
+}
+
+.edit-note {
+  background-color: #007bff;
+}
+
+.edit-note:hover {
+  background-color: #0056b3;
+}
+
+.delete-note {
+  background-color: #dc3545;
+}
+
+.delete-note:hover {
+  background-color: #c82333;
+}
+
+.back {
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.back:hover {
+  color: #0056b3;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(112, 112, 230);
+  color: #fff;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.footer-left {
+  margin-left: 10px;
+}
+
+.footer-right {
+  margin-right: 40px;
+}
